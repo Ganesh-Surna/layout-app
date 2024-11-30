@@ -1,0 +1,26 @@
+.media-preview-container {
+  position: relative;
+  display: inline-block;  
+}
+
+.media-icon {
+  width: 40px; /* Adjust as needed */
+  height: 40px; /* Adjust as needed */
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.preview-media {
+  --position: absolute;
+  top: 40;
+  left: 0;
+  display: flex;
+  width: 95%; /* Ensures the media fits its container */
+  --height: 50vh; /* Ensures the media fits its container */
+  z-index: 1;
+  border: 1px solid #000;
+  align-items: start;
+}

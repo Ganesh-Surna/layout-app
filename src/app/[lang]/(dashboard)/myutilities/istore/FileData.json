@@ -1,0 +1,34 @@
+{
+  "userId": "parsi.venkatramana@gmail.com",
+  "folders": [
+    {
+      "folderId": "root",
+      "name": "Root",
+      "parentId": null,
+      "files": [
+        {
+          "fileId": "file1",
+          "fileName": "example1.txt",
+          "s3Key": "parsi.venkatramana@gmail.com/root/example1.txt",
+          "isPublic": false
+        }
+      ],
+      "subFolders": [
+        {
+          "folderId": "folder1",
+          "name": "Folder A",
+          "parentId": "root",
+          "files": [
+            {
+              "fileId": "file2",
+              "fileName": "example2.txt",
+              "s3Key": "parsi.venkatramana@gmail.com/root/folderA/example2.txt",
+              "isPublic": true
+            }
+          ],
+          "subFolders": []
+        }
+      ]
+    }
+  ]
+}

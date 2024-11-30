@@ -1,0 +1,40 @@
+/* stylelint-disable liberty/use-logical-spec */
+.advertisement-banner {
+  background-color: yellow; /* Example background color */
+  color: black; /* Example text color */
+  padding: 10px;
+  position: fixed;
+  z-index: 9999;
+  top: 112px; /* Adjust according to your app bar's height */
+  left: 0; /* Initially hide the banner outside the viewport */
+  animation: scrollBanner 9s linear infinite; /* Adjust animation duration as needed */
+}
+
+@keyframes scrollBanner {
+  0% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.advertisement-banner img {
+  width: 50px; /* Adjust image size as needed */
+  height: 50px;
+}
+
+.advertisement-banner span {
+  animation: blink 1s linear infinite; /* Blinking animation */
+}
+
+@keyframes blink {
+  0%,
+  49%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
